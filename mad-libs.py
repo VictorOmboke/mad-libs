@@ -87,3 +87,19 @@ def get_animal():
             print("Invalid input. Please enter an animal.")
         else: 
             return user_animal
+
+#Create story
+def create_mad_lib():
+    """Create a mad-lib story using the users inputs.
+    """
+    adjective = get_adjective()
+    noun = get_noun()
+    verb = get_verb()
+    place = get_place()
+    animal = get_animal()
+    print(f"""Once upon a time, there was a {adjective} man named Peter. Peter loved to eat {noun} and it was the highlight of his day. 
+        One day Peter was {verb} and he realized that he was hungry and was craving {noun}. He went to {place} looking for his favorite meal but noticed it was being guarded by a {animal}.
+        Peter realized he needed to fight the {animal}. A great battle ensued but peter was quickly overwhelmed by its sheer power and had lost. 
+        The great battle between peter and the {animal} is a tale of legends that will be remembered for generations. RIP Peter.""")
+
+create_mad_lib()
