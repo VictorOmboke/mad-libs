@@ -17,8 +17,40 @@ def get_adjective():
             return user_adjective
 
 #Get user to enter a noun
+def get_noun():
+    """Prompt user to enter a noun.
+
+    Return: user_noun - the users chosen noun.
+    """
+    prompt = True
+    while prompt:
+        user_noun = input("Please enter a noun. (e.g. 'cat', 'New York', 'table', etc.) ")
+        #Check if the user did not enter anything.
+        if len(user_noun) < 1:
+            print("No user input detected. PLease enter an adjective.")
+         #Check if the user did entered anything beside alphabetic letters.
+        elif user_noun.isalpha() == False:
+            print("Invalid input. Please enter an adjective.")
+        else: 
+            return user_noun
 
 #get user to enter a verb
+def get_verb():
+    """Prompt user to enter a verb.
+
+    Return: user_verb - the users chosen verb.
+    """
+    prompt = True
+    while prompt:
+        user_verb = input("Please enter a noun. (e.g. 'run', 'throw', 'sleep', etc.) ")
+        #Check if the user did not enter anything.
+        if len(user_verb) < 1:
+            print("No user input detected. PLease enter an adjective.")
+         #Check if the user did entered anything beside alphabetic letters.
+        elif user_verb.isalpha() == False:
+            print("Invalid input. Please enter an adjective.")
+        else: 
+            return user_verb
 
 #get user to enter a place
 
