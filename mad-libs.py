@@ -10,7 +10,7 @@ def get_adjective():
         #Check if the user did not enter anything.
         if len(user_adjective) < 1:
             print("No user input detected. Please enter an adjective.")
-        #Check if the user did entered anything beside alphabetic letters.
+        #Check if the user entered anything beside alphabetic letters.
         elif user_adjective.isalpha() == False:
             print("Invalid input. Please enter an adjective.")
         else: 
@@ -46,7 +46,7 @@ def get_verb():
         #Check if the user did not enter anything.
         if len(user_verb) < 1:
             print("No user input detected. Please enter a verb.")
-         #Check if the user did entered anything beside alphabetic letters.
+         #Check if the user entered anything beside alphabetic letters.
         elif user_verb.isalpha() == False:
             print("Invalid input. Please enter an adjective.")
         else: 
@@ -64,12 +64,26 @@ def get_place():
         #Check if the user did not enter anything.
         if len(user_place) < 1:
             print("No user input detected. Please enter a place.")
-         #Check if the user did entered anything beside alphabetic letters.
+         #Check if the user entered anything beside alphabetic letters.
         elif user_place.isalpha() == False:
-            print("Invalid input. Please enter an adjective.")
+            print("Invalid input. Please enter a place.")
         else: 
             return user_place
 
 #get user to enter an animal
+def get_animal():
+    """Prompt user to enter an animal.
 
-#get user to enter an exclamation
+    Return: user_animal - the users chosen animal.
+    """
+    prompt = True
+    while prompt:
+        user_animal = input("Please enter a animal. (e.g. 'tiger', 'fish', 'crocodile', etc.) ")
+        #Check if the user did not enter anything.
+        if len(user_animal) < 1:
+            print("No user input detected. Please enter an animal.")
+         #Check if the user entered anything beside alphabetic letters.
+        elif user_animal.isalpha() == False:
+            print("Invalid input. Please enter an animal.")
+        else: 
+            return user_animal
