@@ -11,6 +11,6 @@ A simple Python program that generates a Mad Libs story based on user input.
 ## How to Run
 
 1. Clone the repository.
-   Run the script using Python:
+2. Run the script using Python:
    `bash
-    python mad-libs.py`
+python mad-libs.py`
